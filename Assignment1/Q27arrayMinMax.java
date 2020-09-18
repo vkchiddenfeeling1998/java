@@ -1,37 +1,33 @@
 import java.util.Scanner;
-public class Q22SortingDecreasingOrder {
+public class Q27arrayMinMax {
 
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the size of the array:");
-		int i,j,temp,size;
-		size=sc.nextInt();
-		int arr[ ]=new int[size];
-		System.out.println("Enter the Element of the array:");
-		 for(i=0;i<size;i++)
-		{
-		    arr[i]=sc.nextInt();
-		}
+  	Scanner sc=new Scanner(System.in);
+ 	 System.out.println("Enter the size of the array:");
+     	int size;
+    	 size=sc.nextInt();
+    	 int arr[ ]=new int[size];
+  	int i,j=0;
+	int max=Integer.MIN_VALUE,min=Integer.MAX_VALUE;
+  	System.out.println("Enter the Element of the array:");
+     	 while(j<size)
+     	{
+         arr[j]=sc.nextInt();
+         j++;
 
-		 System.out.print("\nArray elements are:");
-		 for(i=0;i<size;i++)
-		 {
-		  System.out.print(arr[i]+" ");
-		 }
-		 for(i=0;i<size;i++)
-		 {
-		     for(j=i+1;j<size;j++)
-		     if(arr[i]<=arr[j])
-		     {
-		      temp=arr[i];
-		      arr[i]=arr[j];
-		      arr[j]=temp;
-		     }}
+     	}
+     	for(i=0;i<size;i++)
+     	{
+         if(arr[i]>=max)
+         max=arr[i];
+    	 }
+     System.out.println("The largest element of array: "+max);
+	for(i=0;i<size;i++)
+     	{
+         if(arr[i]<=min)
+         min=arr[i];
+    	 }
+     System.out.println("The small element of array: "+min);
 
-		 System.out.print("\nAfter Decreasing order sort Array Elements are:");
-		 for(i=0;i<size;i++)
-		 {
-		  System.out.print(arr[i]+" ");
-		 }
-		     
-		}}
+ }
+}
