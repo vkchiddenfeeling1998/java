@@ -1,5 +1,7 @@
 import java.util.Scanner;
-public class p13 {
+public classimport java.util.Scanner;
+
+public class Q23reversearray {
 
  public static void main(String[] args) {
   Scanner sc=new Scanner(System.in);
