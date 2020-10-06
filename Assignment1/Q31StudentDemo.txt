@@ -1,0 +1,9 @@
+import java.util.Scanner;
+class Student{
+	private int rno;
+	private String name;
+	void SetData(){
+		
+	}
+
+}

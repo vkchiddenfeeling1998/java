@@ -1,0 +1,50 @@
+class Faculty{
+	private int facultyId;
+	private double salary;
+	
+	Faculty(){}
+	void input(int facultyId){
+		this.facultyId=facultyId;
+		salary=0;
+	}
+	protected double getsalary(){
+		returns salary;
+	}
+	protected double setsalary(double salary){
+		this.salary=salary;
+	}
+	void printsalary(){
+		
+		System.out.println("the salary of facultyID is= "+facultyId+"is"+salary);
+	}
+}
+class Fulltimefaculty extends faculty{
+	private double basicsalary;
+	private double allowance;
+	Fulltimefaculty(){
+		super();
+		basicsalary=0;
+		allowance=0;
+	}
+	void input(int facultyId,double basicsalary,double allowance){
+		input (facultyId);
+		this.basicsalary=basicsalary;
+		this.allowance=allowance;
+		setsalary(basicsalary+allowance);
+	}
+}
+class Parttimefaculty extends faculty{
+	private double basicsalary;
+	private double allowance;
+	Parttimefaculty(){
+		super();
+		basicsalary=0;
+		allowance=0;
+	}
+	void input(int facultyId,double basicsalary,double allowance){
+		input (facultyId);
+		this.basicsalary=basicsalary;
+		this.allowance=allowance;
+		setsalary(basicsalary+allowance);
+	}
+}

@@ -1,0 +1,22 @@
+import java .util.Scanner;
+public class Operation{
+	private float num1;
+	private float num2;
+	void sum(float num1,float num2){
+		float sum;
+		sum=num1+num2;
+		System.out.println("Sum is = "+sum);
+	}
+
+}
+class Q35MathOpertion{
+	public static voids main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter two numbers");
+	float num1=sc.nextFloat();
+	float num2=sc.nextFloat();
+	Operation o= new Operation();
+	o.sum(num1,num2);
+	}
+	
+}
